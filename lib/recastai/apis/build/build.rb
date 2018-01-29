@@ -7,7 +7,7 @@ require_relative 'dialog_message'
 require_relative 'dialog_conversation'
 
 module RecastAI
-  class Build
+  class Dialog
     attr_reader :token, :language
 
     def initialize(token = nil, language = nil)

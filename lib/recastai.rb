@@ -16,7 +16,7 @@ module RecastAI
     attr_reader :token, :language
 
     def initialize(token = nil, language = nil)
-      [RecastAI::Request, RecastAI::Connect, RecastAI::Build].each do |api|
+      [RecastAI::Request, RecastAI::Connect, RecastAI::Dialog].each do |api|
         i = api.name.rindex('::')
         name = i.nil? ? api.name : api.name[(i + 2)..-1]
 
